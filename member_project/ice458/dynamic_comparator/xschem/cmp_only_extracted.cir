@@ -1,0 +1,438 @@
+
+* cell cmp_only
+* pin vss
+.SUBCKT cmp_only 2
+* net 2 vss
+* cell instance $1 r0 *1 4.19,-0.5
+X$1 3 1 2 inv
+* cell instance $2 r0 *1 0.15,-0.49
+X$2 1 3 2 nand
+* cell instance $3 r0 *1 9.63,-0.91
+X$3 2 rs_ff
+* cell instance $4 r0 *1 1.14,15.36
+X$4 2 delay
+.ENDS cmp_only
+
+* cell rs_ff
+* pin vss
+.SUBCKT rs_ff 4
+* net 4 vss
+* cell instance $1 m90 *1 3.08,0.29
+X$1 5 1 4 inv
+* cell instance $2 m90 *1 0.11,0.29
+X$2 5 1 4 inv
+* cell instance $3 m90 *1 6.06,0.29
+X$3 5 1 4 inv
+* device instance $1 r0 *1 8.87,0.86 nfet_03v3
+M$1 7 9 3 4 nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.1092P PS=2.06U PD=0.94U
+* device instance $2 r0 *1 9.67,0.86 nfet_03v3
+M$2 2 11 7 4 nfet_03v3 L=0.28U W=0.42U AS=0.1092P AD=0.1092P PS=0.94U PD=0.94U
+* device instance $3 r0 *1 10.47,0.86 nfet_03v3
+M$3 8 10 2 4 nfet_03v3 L=0.28U W=0.42U AS=0.1092P AD=0.1092P PS=0.94U PD=0.94U
+* device instance $4 r0 *1 11.27,0.86 nfet_03v3
+M$4 6 12 8 4 nfet_03v3 L=0.28U W=0.42U AS=0.1092P AD=0.2562P PS=0.94U PD=2.06U
+* device instance $5 r0 *1 8.87,2.94 pfet_03v3
+M$5 14 17 3 21 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.26P PS=3.3U PD=1.52U
+* device instance $6 r0 *1 9.67,2.94 pfet_03v3
+M$6 15 19 14 21 pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.26P PS=1.52U PD=1.52U
+* device instance $7 r0 *1 10.47,2.94 pfet_03v3
+M$7 16 18 15 21 pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.26P PS=1.52U PD=1.52U
+* device instance $8 r0 *1 11.27,2.94 pfet_03v3
+M$8 13 20 16 21 pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.65P PS=1.52U PD=3.3U
+.ENDS rs_ff
+
+* cell delay
+* pin vss
+.SUBCKT delay 74
+* net 1 vss
+* net 2 a,y
+* net 3 a,y
+* net 4 a,y
+* net 5 a,y
+* net 6 a,y
+* net 7 a,y
+* net 8 a,y
+* net 9 a,y
+* net 10 a,y
+* net 11 a,y
+* net 12 a,y
+* net 13 a,y
+* net 14 a,y
+* net 15 a,y
+* net 16 a,y
+* net 17 a,y
+* net 18 a,y
+* net 19 out,y
+* net 20 a,y
+* net 21 a,y
+* net 22 a,y
+* net 23 a,y
+* net 24 a,y
+* net 25 a,y
+* net 26 a,y
+* net 27 a,y
+* net 28 a,y
+* net 29 a,y
+* net 30 a,y
+* net 31 a,y
+* net 32 a,y
+* net 33 a,y
+* net 34 a,y
+* net 35 a,y
+* net 36 a,y
+* net 37 a,y
+* net 38 vdd
+* net 39 a,in
+* net 40 a,y
+* net 41 a,y
+* net 42 a,y
+* net 43 a,y
+* net 44 a,y
+* net 45 a,y
+* net 46 a,y
+* net 47 a,y
+* net 48 a,y
+* net 49 a,y
+* net 50 a,y
+* net 51 a,y
+* net 52 a,y
+* net 53 a,y
+* net 54 a,y
+* net 55 a,y
+* net 56 a,y
+* net 57 a,y
+* net 58 a,y
+* net 59 a,y
+* net 60 a,y
+* net 61 a,y
+* net 62 a,y
+* net 63 a,y
+* net 64 a,y
+* net 65 a,y
+* net 66 a,y
+* net 67 a,y
+* net 68 a,y
+* net 69 a,y
+* net 70 a,y
+* net 71 a,y
+* net 72 a,y
+* net 73 a,y
+* net 74 vss
+* device instance $1 r0 *1 -0.57,-4.53 pfet_03v3
+M$1 38 20 19 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $2 r0 *1 2.45,-4.53 pfet_03v3
+M$2 38 21 20 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $3 r0 *1 5.45,-4.53 pfet_03v3
+M$3 38 22 21 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $4 r0 *1 8.45,-4.53 pfet_03v3
+M$4 38 23 22 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $5 r0 *1 11.45,-4.53 pfet_03v3
+M$5 38 24 23 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $6 r0 *1 14.42,-4.53 pfet_03v3
+M$6 38 25 24 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $7 r0 *1 17.44,-4.53 pfet_03v3
+M$7 38 26 25 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $8 r0 *1 20.44,-4.53 pfet_03v3
+M$8 38 27 26 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $9 r0 *1 23.44,-4.53 pfet_03v3
+M$9 38 28 27 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $10 r0 *1 26.44,-4.53 pfet_03v3
+M$10 38 2 28 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $11 r0 *1 29.44,-4.53 pfet_03v3
+M$11 38 29 2 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $12 r0 *1 32.44,-4.53 pfet_03v3
+M$12 38 3 29 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $13 r0 *1 35.39,-4.53 pfet_03v3
+M$13 38 4 3 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $14 r0 *1 38.39,-4.53 pfet_03v3
+M$14 38 5 4 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $15 r0 *1 41.39,-4.53 pfet_03v3
+M$15 38 6 5 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $16 r0 *1 44.39,-4.52 pfet_03v3
+M$16 38 30 6 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $17 r0 *1 47.41,-4.52 pfet_03v3
+M$17 38 7 30 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $18 r0 *1 50.41,-4.52 pfet_03v3
+M$18 38 8 7 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $19 r0 *1 53.41,-4.52 pfet_03v3
+M$19 38 31 8 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $20 r0 *1 56.41,-4.52 pfet_03v3
+M$20 38 9 31 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $21 r0 *1 59.41,-4.52 pfet_03v3
+M$21 38 32 9 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $22 r0 *1 62.41,-4.52 pfet_03v3
+M$22 38 33 32 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $23 r0 *1 65.36,-4.52 pfet_03v3
+M$23 38 10 33 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $24 r0 *1 68.36,-4.52 pfet_03v3
+M$24 38 11 10 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $25 r0 *1 71.36,-4.52 pfet_03v3
+M$25 38 34 11 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $26 r0 *1 74.35,-4.51 pfet_03v3
+M$26 38 12 34 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $27 r0 *1 77.37,-4.51 pfet_03v3
+M$27 38 13 12 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $28 r0 *1 80.37,-4.51 pfet_03v3
+M$28 38 14 13 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $29 r0 *1 83.37,-4.51 pfet_03v3
+M$29 38 15 14 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $30 r0 *1 86.37,-4.51 pfet_03v3
+M$30 38 16 15 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $31 r0 *1 89.37,-4.51 pfet_03v3
+M$31 38 17 16 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $32 r0 *1 92.37,-4.51 pfet_03v3
+M$32 38 18 17 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $33 r0 *1 95.32,-4.52 pfet_03v3
+M$33 38 35 18 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $34 r0 *1 98.32,-4.52 pfet_03v3
+M$34 38 36 35 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $35 r0 *1 101.32,-4.52 pfet_03v3
+M$35 38 37 36 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $36 r0 *1 0.02,2.44 pfet_03v3
+M$36 64 39 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $37 r0 *1 3.02,2.44 pfet_03v3
+M$37 65 64 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $38 r0 *1 6.02,2.44 pfet_03v3
+M$38 66 65 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $39 r0 *1 8.97,2.44 pfet_03v3
+M$39 67 66 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $40 r0 *1 11.97,2.44 pfet_03v3
+M$40 68 67 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $41 r0 *1 14.97,2.44 pfet_03v3
+M$41 69 68 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $42 r0 *1 17.97,2.44 pfet_03v3
+M$42 70 69 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $43 r0 *1 20.97,2.44 pfet_03v3
+M$43 71 70 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $44 r0 *1 23.97,2.44 pfet_03v3
+M$44 72 71 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $45 r0 *1 26.99,2.44 pfet_03v3
+M$45 73 72 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $46 r0 *1 29.98,2.43 pfet_03v3
+M$46 40 73 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $47 r0 *1 32.98,2.43 pfet_03v3
+M$47 41 40 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $48 r0 *1 35.98,2.43 pfet_03v3
+M$48 42 41 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $49 r0 *1 38.93,2.43 pfet_03v3
+M$49 43 42 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $50 r0 *1 41.93,2.43 pfet_03v3
+M$50 44 43 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $51 r0 *1 44.93,2.43 pfet_03v3
+M$51 45 44 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $52 r0 *1 47.93,2.43 pfet_03v3
+M$52 46 45 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $53 r0 *1 50.93,2.43 pfet_03v3
+M$53 47 46 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $54 r0 *1 53.93,2.43 pfet_03v3
+M$54 48 47 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $55 r0 *1 56.95,2.43 pfet_03v3
+M$55 49 48 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $56 r0 *1 59.95,2.43 pfet_03v3
+M$56 50 49 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $57 r0 *1 62.95,2.43 pfet_03v3
+M$57 51 50 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $58 r0 *1 65.95,2.43 pfet_03v3
+M$58 52 51 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $59 r0 *1 68.9,2.43 pfet_03v3
+M$59 53 52 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $60 r0 *1 71.9,2.43 pfet_03v3
+M$60 54 53 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $61 r0 *1 74.9,2.43 pfet_03v3
+M$61 55 54 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $62 r0 *1 77.9,2.43 pfet_03v3
+M$62 56 55 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $63 r0 *1 80.9,2.43 pfet_03v3
+M$63 57 56 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $64 r0 *1 83.9,2.43 pfet_03v3
+M$64 58 57 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $65 r0 *1 86.92,2.43 pfet_03v3
+M$65 59 58 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $66 r0 *1 89.89,2.43 pfet_03v3
+M$66 60 59 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $67 r0 *1 92.89,2.43 pfet_03v3
+M$67 61 60 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $68 r0 *1 95.89,2.43 pfet_03v3
+M$68 62 61 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $69 r0 *1 98.89,2.43 pfet_03v3
+M$69 63 62 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $70 r0 *1 101.91,2.43 pfet_03v3
+M$70 37 63 38 38 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $71 r0 *1 -0.57,-6.61 nfet_03v3
+M$71 1 20 19 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $72 r0 *1 2.45,-6.61 nfet_03v3
+M$72 1 21 20 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $73 r0 *1 5.45,-6.61 nfet_03v3
+M$73 1 22 21 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $74 r0 *1 8.45,-6.61 nfet_03v3
+M$74 1 23 22 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $75 r0 *1 11.45,-6.61 nfet_03v3
+M$75 1 24 23 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $76 r0 *1 14.42,-6.61 nfet_03v3
+M$76 1 25 24 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $77 r0 *1 17.44,-6.61 nfet_03v3
+M$77 1 26 25 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $78 r0 *1 20.44,-6.61 nfet_03v3
+M$78 1 27 26 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $79 r0 *1 23.44,-6.61 nfet_03v3
+M$79 1 28 27 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $80 r0 *1 26.44,-6.61 nfet_03v3
+M$80 1 2 28 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $81 r0 *1 29.44,-6.61 nfet_03v3
+M$81 1 29 2 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $82 r0 *1 32.44,-6.61 nfet_03v3
+M$82 1 3 29 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $83 r0 *1 35.39,-6.61 nfet_03v3
+M$83 1 4 3 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $84 r0 *1 38.39,-6.61 nfet_03v3
+M$84 1 5 4 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $85 r0 *1 41.39,-6.61 nfet_03v3
+M$85 1 6 5 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $86 r0 *1 44.39,-6.6 nfet_03v3
+M$86 1 30 6 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $87 r0 *1 47.41,-6.6 nfet_03v3
+M$87 1 7 30 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $88 r0 *1 50.41,-6.6 nfet_03v3
+M$88 1 8 7 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $89 r0 *1 53.41,-6.6 nfet_03v3
+M$89 1 31 8 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $90 r0 *1 56.41,-6.6 nfet_03v3
+M$90 1 9 31 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $91 r0 *1 59.41,-6.6 nfet_03v3
+M$91 1 32 9 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $92 r0 *1 62.41,-6.6 nfet_03v3
+M$92 1 33 32 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $93 r0 *1 65.36,-6.6 nfet_03v3
+M$93 1 10 33 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $94 r0 *1 68.36,-6.6 nfet_03v3
+M$94 1 11 10 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $95 r0 *1 71.36,-6.6 nfet_03v3
+M$95 1 34 11 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $96 r0 *1 74.35,-6.59 nfet_03v3
+M$96 1 12 34 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $97 r0 *1 77.37,-6.59 nfet_03v3
+M$97 1 13 12 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $98 r0 *1 80.37,-6.59 nfet_03v3
+M$98 1 14 13 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $99 r0 *1 83.37,-6.59 nfet_03v3
+M$99 1 15 14 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $100 r0 *1 86.37,-6.59 nfet_03v3
+M$100 1 16 15 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $101 r0 *1 89.37,-6.59 nfet_03v3
+M$101 1 17 16 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $102 r0 *1 92.37,-6.59 nfet_03v3
+M$102 1 18 17 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $103 r0 *1 95.32,-6.6 nfet_03v3
+M$103 1 35 18 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $104 r0 *1 98.32,-6.6 nfet_03v3
+M$104 1 36 35 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $105 r0 *1 101.32,-6.6 nfet_03v3
+M$105 1 37 36 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $106 r0 *1 0.02,0.36 nfet_03v3
+M$106 64 39 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $107 r0 *1 3.02,0.36 nfet_03v3
+M$107 65 64 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $108 r0 *1 6.02,0.36 nfet_03v3
+M$108 66 65 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $109 r0 *1 8.97,0.36 nfet_03v3
+M$109 67 66 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $110 r0 *1 11.97,0.36 nfet_03v3
+M$110 68 67 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $111 r0 *1 14.97,0.36 nfet_03v3
+M$111 69 68 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $112 r0 *1 17.97,0.36 nfet_03v3
+M$112 70 69 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $113 r0 *1 20.97,0.36 nfet_03v3
+M$113 71 70 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $114 r0 *1 23.97,0.36 nfet_03v3
+M$114 72 71 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $115 r0 *1 26.99,0.36 nfet_03v3
+M$115 73 72 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $116 r0 *1 29.98,0.35 nfet_03v3
+M$116 40 73 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $117 r0 *1 32.98,0.35 nfet_03v3
+M$117 41 40 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $118 r0 *1 35.98,0.35 nfet_03v3
+M$118 42 41 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $119 r0 *1 38.93,0.35 nfet_03v3
+M$119 43 42 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $120 r0 *1 41.93,0.35 nfet_03v3
+M$120 44 43 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $121 r0 *1 44.93,0.35 nfet_03v3
+M$121 45 44 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $122 r0 *1 47.93,0.35 nfet_03v3
+M$122 46 45 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $123 r0 *1 50.93,0.35 nfet_03v3
+M$123 47 46 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $124 r0 *1 53.93,0.35 nfet_03v3
+M$124 48 47 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $125 r0 *1 56.95,0.35 nfet_03v3
+M$125 49 48 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $126 r0 *1 59.95,0.35 nfet_03v3
+M$126 50 49 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $127 r0 *1 62.95,0.35 nfet_03v3
+M$127 51 50 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $128 r0 *1 65.95,0.35 nfet_03v3
+M$128 52 51 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $129 r0 *1 68.9,0.35 nfet_03v3
+M$129 53 52 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $130 r0 *1 71.9,0.35 nfet_03v3
+M$130 54 53 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $131 r0 *1 74.9,0.35 nfet_03v3
+M$131 55 54 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $132 r0 *1 77.9,0.35 nfet_03v3
+M$132 56 55 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $133 r0 *1 80.9,0.35 nfet_03v3
+M$133 57 56 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $134 r0 *1 83.9,0.35 nfet_03v3
+M$134 58 57 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $135 r0 *1 86.92,0.35 nfet_03v3
+M$135 59 58 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $136 r0 *1 89.89,0.35 nfet_03v3
+M$136 60 59 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $137 r0 *1 92.89,0.35 nfet_03v3
+M$137 61 60 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $138 r0 *1 95.89,0.35 nfet_03v3
+M$138 62 61 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $139 r0 *1 98.89,0.35 nfet_03v3
+M$139 63 62 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+* device instance $140 r0 *1 101.91,0.35 nfet_03v3
+M$140 37 63 1 74 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+.ENDS delay
+
+* cell nand
+* pin vdd
+* pin vss
+* pin vss
+.SUBCKT nand 1 3 7
+* net 1 vdd
+* net 2 y
+* net 3 vss
+* net 4 a
+* net 5 b
+* net 7 vss
+* device instance $1 r0 *1 -0.11,2.63 pfet_03v3
+M$1 2 4 1 1 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.26P PS=3.3U PD=1.52U
+* device instance $2 r0 *1 0.69,2.63 pfet_03v3
+M$2 1 5 2 1 pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.65P PS=1.52U PD=3.3U
+* device instance $3 r0 *1 -0.11,0.59 nfet_03v3
+M$3 6 4 2 7 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.1092P PS=2.1U PD=0.94U
+* device instance $4 r0 *1 0.69,0.59 nfet_03v3
+M$4 6 5 3 7 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.1092P PS=2.1U PD=0.94U
+.ENDS nand
+
+* cell inv
+* pin vss
+* pin vdd
+* pin vss
+.SUBCKT inv 2 4 5
+* net 1 y
+* net 2 vss
+* net 3 a
+* net 4 vdd
+* net 5 vss
+* device instance $1 r0 *1 -0.08,2.65 pfet_03v3
+M$1 4 3 1 4 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $2 r0 *1 -0.08,0.57 nfet_03v3
+M$2 2 3 1 5 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.2646P PS=2.1U PD=2.1U
+.ENDS inv

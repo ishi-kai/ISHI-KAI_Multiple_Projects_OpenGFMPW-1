@@ -1,0 +1,16 @@
+
+* cell inv
+* pin vdd
+* pin a
+* pin y
+* pin vss
+.SUBCKT inv 1 2 3 4
+* net 1 vdd
+* net 2 a
+* net 3 y
+* net 4 vss
+* device instance $1 r0 *1 0.33,-1.61 pfet_03v3
+M$1 3 2 1 1 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $2 r0 *1 0.33,-3.4 nfet_03v3
+M$2 3 2 4 4 nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P PS=2.06U PD=2.06U
+.ENDS inv

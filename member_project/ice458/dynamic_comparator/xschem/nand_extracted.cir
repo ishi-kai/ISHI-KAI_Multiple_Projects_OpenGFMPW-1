@@ -1,0 +1,42 @@
+
+* cell nand
+.SUBCKT nand
+* net 1 vdd
+* net 2 y
+* net 3 a
+* net 4 b
+* net 5 vss
+* cell instance $1 r0 *1 -0.44,2.13
+X$1 1 1 2 3 4 1 pfet$1
+* cell instance $2 r0 *1 -0.44,0.38
+X$2 2 5 3 4 5 5 nfet
+.ENDS nand
+
+* cell nfet
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin vss
+.SUBCKT nfet 2 3 5 6 7 8
+* net 8 vss
+* device instance $1 r0 *1 0.33,0.21 nfet_03v3
+M$1 4 5 2 8 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.1092P PS=2.1U PD=0.94U
+* device instance $2 r0 *1 1.13,0.21 nfet_03v3
+M$2 4 6 3 8 nfet_03v3 L=0.28U W=0.42U AS=0.2646P AD=0.1092P PS=2.1U PD=0.94U
+.ENDS nfet
+
+* cell pfet$1
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+* pin 
+.SUBCKT pfet$1 2 3 4 5 6 7
+* device instance $1 r0 *1 0.33,0.5 pfet_03v3
+M$1 4 5 2 7 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.26P PS=3.3U PD=1.52U
+* device instance $2 r0 *1 1.13,0.5 pfet_03v3
+M$2 3 6 4 7 pfet_03v3 L=0.28U W=1U AS=0.26P AD=0.65P PS=1.52U PD=3.3U
+.ENDS pfet$1

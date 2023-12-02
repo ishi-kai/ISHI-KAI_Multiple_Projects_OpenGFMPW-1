@@ -1,0 +1,26 @@
+
+* cell cmos_sw
+* pin ctrl
+* pin vdd
+* pin A
+* pin B
+* pin vss
+.SUBCKT cmos_sw 1 4 5 6 7
+* net 1 ctrl
+* net 4 vdd
+* net 5 A
+* net 6 B
+* net 7 vss
+* device instance $1 r0 *1 -19.27,-100.94 pfet_03v3
+M$1 6 2 5 4 pfet_03v3 L=0.28U W=2.4U AS=1.632P AD=1.56P PS=6.16U PD=6.1U
+* device instance $2 r0 *1 -18.77,-110.12 pfet_03v3
+M$2 3 2 4 4 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $3 r0 *1 -21.19,-110.12 pfet_03v3
+M$3 2 1 4 4 pfet_03v3 L=0.28U W=1U AS=0.65P AD=0.65P PS=3.3U PD=3.3U
+* device instance $4 r0 *1 -19.27,-104.72 nfet_03v3
+M$4 6 3 5 7 nfet_03v3 L=0.28U W=0.88U AS=0.5368P AD=0.6864P PS=2.98U PD=3.32U
+* device instance $5 r0 *1 -18.77,-111.91 nfet_03v3
+M$5 3 2 7 7 nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P PS=2.06U PD=2.06U
+* device instance $6 r0 *1 -21.19,-111.91 nfet_03v3
+M$6 2 1 7 7 nfet_03v3 L=0.28U W=0.42U AS=0.2562P AD=0.2562P PS=2.06U PD=2.06U
+.ENDS cmos_sw
