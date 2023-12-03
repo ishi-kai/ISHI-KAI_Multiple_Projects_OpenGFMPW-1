@@ -347,12 +347,6 @@ C {devices/ipin.sym} -50 -150 0 1 {name=p3 lab=inm}
 C {devices/opin.sym} 1090 320 0 0 {name=p7 lab=outp}
 C {devices/opin.sym} 1090 170 0 0 {name=p8 lab=outm}
 C {devices/iopin.sym} -1840 -470 2 0 {name=p9 lab=vdd}
-C {symbols/cap_mim_2p0fF.sym} -1270 -150 0 0 {name=C2
-W=15e-6
-L=15e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
 C {symbols/nfet_05v0.sym} -830 10 0 0 {name=M14
 L=0.70u
 W=1u
@@ -514,18 +508,6 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
-C {symbols/cap_mim_2p0fF.sym} -730 -120 0 0 {name=C1
-W=15e-6
-L=15e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
-C {symbols/cap_mim_2p0fF.sym} -240 -120 0 0 {name=C3
-W=15e-6
-L=15e-6
-model=cap_mim_2f0fF
-spiceprefix=X
-m=1}
 C {symbols/pfet_06v0.sym} 300 -240 0 0 {name=M4
 L=0.7u
 W=3u
@@ -582,3 +564,21 @@ sa=0 sb=0 sd=0
 model=pfet_05v0
 spiceprefix=X
 }
+C {symbols/cap_mim_2p0fF.sym} -1270 -150 0 0 {name=C1
+W=15e-6
+L=15e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} -730 -120 0 0 {name=C2
+W=15e-6
+L=15e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} -240 -120 0 0 {name=C3
+W=15e-6
+L=15e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
