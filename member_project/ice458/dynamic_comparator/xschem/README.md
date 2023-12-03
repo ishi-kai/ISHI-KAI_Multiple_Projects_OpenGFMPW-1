@@ -7,5 +7,5 @@ There does not seem to be a SPICE model of pfet for 5V, so a 6V model must be su
 Except for cmp_only_5v_tb.sch, all other transistors use 3.3V transistors. The simulation works, but I abandoned the design because it seems that GFMPW-1 cannot use 3.3V transistors.  
 cmp_only_5v_tb.schで参照されている回路以外すべては3.3Vのトランジスタを使用しています。シミュレーションは動きますが、GFMPW-1では3.3Vのトランジスタが使用できないようなので設計を途中で放棄しています。  
   
-For some reason using labels did not pass the precheck tool, so use cmp_only_5v_no_label.gds for tapeout.  
-何らかの理由でラベルがあるとプリチェックツールを合格できないので、ラベルを消したcmp_only_5v_no_label.gdsを使ってください。  
+Use cmp_only_5v_no_label.gds with the labels removed, as the labels will not pass the pre-check tool for some reason.  
+ラベルがあると何らかの理由でプリチェックツールを合格できないので、ラベルを消したcmp_only_5v_no_label.gdsを使ってください。  
