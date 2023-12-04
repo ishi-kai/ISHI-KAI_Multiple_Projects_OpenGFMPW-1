@@ -1,0 +1,7 @@
+** sch_path: /home/t-homemoto/kiban/gfmpw/inv_homelith/inv.sch
+.subckt inv A8 Q9 VDD VSS
+*.PININFO A8:I Q9:O VDD:B VSS:B
+M1 Q9 A8 VDD VDD pfet_05v0 L=0.56u W=2.80u nf=1 m=1
+M2 Q9 A8 VSS VSS nfet_05v0 L=0.60u W=3.00u nf=1 m=1
+.ends
+.end
