@@ -1,0 +1,133 @@
+* NGSPICE file created from TOP.ext - technology: gf180mcuD
+
+.subckt TOP VSS OUT VINP VDD VINN IB
+X0 a_61329_n6784# VINN dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X1 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X2 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X3 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X4 a_66329_n6784# a_55035_n6784# a_79287_n10784# VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X5 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X6 a_79287_n10784# a_55035_n6784# a_66329_n6784# VSS nfet_06v0 ad=0.91p pd=4.02u as=2.555p ps=8.46u w=3.5u l=0.7u
+X7 dw_60815_n7004# VINP a_66329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X8 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X9 a_66329_n6784# VINP dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X10 VSS a_55043_n10784# a_55043_n10784# VSS nfet_06v0 ad=2.555p pd=8.46u as=2.555p ps=8.46u w=3.5u l=0.7u
+X11 dw_60815_n7004# VINP a_66329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X12 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X13 a_66329_n6784# a_55035_n6784# a_79287_n10784# VSS nfet_06v0 ad=2.555p pd=8.46u as=0.91p ps=4.02u w=3.5u l=0.7u
+X14 dw_60815_n7004# VINP a_66329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X15 a_66329_n6784# a_61329_n6784# VSS VSS nfet_06v0 ad=2.555p pd=8.46u as=2.555p ps=8.46u w=3.5u l=0.7u
+X16 dw_60815_n7004# IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=5.39p ps=15.539999u w=7u l=0.7u
+X17 a_61329_n6784# VINN dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X18 dw_60815_n7004# VINN a_61329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X19 dw_60815_n7004# VINN a_61329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X20 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X21 VDD IB a_55035_n6784# VDD pfet_06v0 ad=5.39p pd=15.539999u as=5.39p ps=15.539999u w=7u l=0.7u
+X22 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X23 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X24 dw_60815_n7004# VINN a_61329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X25 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X26 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X27 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X28 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X29 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X30 VSS a_61329_n6784# a_61329_n6784# VSS nfet_06v0 ad=2.555p pd=8.46u as=2.555p ps=8.46u w=3.5u l=0.7u
+X31 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X32 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X33 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X34 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X35 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X36 dw_60815_n7004# VINP a_66329_n6784# dw_60815_n7004# pfet_06v0 ad=5.39p pd=15.539999u as=1.82p ps=7.52u w=7u l=0.7u
+X37 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X38 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X39 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X40 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X41 a_66329_n6784# VINP dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=5.39p ps=15.539999u w=7u l=0.7u
+X42 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X43 a_66329_n6784# VINP dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X44 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X45 OUT a_79287_n10784# cap_mim_2f0_m4m5_noshield c_width=39u c_length=19.23u
+X46 dw_60815_n7004# VINN a_61329_n6784# dw_60815_n7004# pfet_06v0 ad=5.39p pd=15.539999u as=1.82p ps=7.52u w=7u l=0.7u
+X47 a_79287_n10784# a_55035_n6784# a_66329_n6784# VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X48 a_61329_n6784# VINN dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=5.39p ps=15.539999u w=7u l=0.7u
+X49 dw_60815_n7004# VINP a_66329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X50 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=2.555p ps=8.46u w=3.5u l=0.7u
+X51 a_61329_n6784# VINN dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X52 VDD IB OUT VDD pfet_06v0 ad=5.39p pd=15.539999u as=1.82p ps=7.52u w=7u l=0.7u
+X53 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=5.39p ps=15.539999u w=7u l=0.7u
+X54 dw_60815_n7004# VINN a_61329_n6784# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X55 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X56 VDD IB OUT VDD pfet_06v0 ad=5.39p pd=15.539999u as=1.82p ps=7.52u w=7u l=0.7u
+X57 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=2.555p pd=8.46u as=0.91p ps=4.02u w=3.5u l=0.7u
+X58 a_66329_n6784# VINP dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X59 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=5.39p ps=15.539999u w=7u l=0.7u
+X60 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X61 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X62 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X63 OUT IB VDD VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X64 a_66329_n6784# VINP dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X65 a_61329_n6784# VINN dw_60815_n7004# dw_60815_n7004# pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X66 VDD IB OUT VDD pfet_06v0 ad=1.82p pd=7.52u as=1.82p ps=7.52u w=7u l=0.7u
+X67 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X68 VSS a_66329_n6784# OUT VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+X69 VDD IB dw_60815_n7004# VDD pfet_06v0 ad=5.39p pd=15.539999u as=1.82p ps=7.52u w=7u l=0.7u
+X70 a_55035_n6784# a_55035_n6784# a_55043_n10784# VSS nfet_06v0 ad=2.555p pd=8.46u as=2.555p ps=8.46u w=3.5u l=0.7u
+X71 OUT a_66329_n6784# VSS VSS nfet_06v0 ad=0.91p pd=4.02u as=0.91p ps=4.02u w=3.5u l=0.7u
+C0 VINP VDD 3.40615f
+C1 a_66329_n6784# a_79287_n10784# 1.00417f
+C2 VDD a_55035_n6784# 0.353987f
+C3 a_61329_n6784# a_55035_n6784# 0.418277f
+C4 VSS OUT 8.207049f
+C5 a_66329_n6784# IB 0.071496f
+C6 VINP dw_60815_n7004# 3.34895f
+C7 IB w_57815_n7004# 0.082524f
+C8 a_55035_n6784# dw_60815_n7004# 0.011828f
+C9 VINN a_55035_n6784# 0.002687f
+C10 VDD a_66329_n6784# 0.068732f
+C11 a_55035_n6784# OUT 0.287662f
+C12 a_61329_n6784# a_66329_n6784# 0.410597f
+C13 VDD IB 11.506201f
+C14 a_61329_n6784# IB 0.001163f
+C15 a_55035_n6784# VSS 1.51552f
+C16 IB w_70815_n7004# 0.387961f
+C17 a_55043_n10784# VSS 0.443171f
+C18 a_66329_n6784# dw_60815_n7004# 5.28941f
+C19 a_79287_n10784# OUT 3.21715f
+C20 VINP a_55035_n6784# 0.001553f
+C21 dw_60815_n7004# IB 0.633952f
+C22 a_66329_n6784# OUT 2.38134f
+C23 VINN IB 0.53823f
+C24 IB OUT 3.7759f
+C25 a_79287_n10784# VSS 0.177667f
+C26 VINP w_65815_n7004# 0.387961f
+C27 a_66329_n6784# VSS 7.08604f
+C28 a_55043_n10784# a_55035_n6784# 0.508315f
+C29 VDD dw_60815_n7004# 1.33026f
+C30 a_61329_n6784# dw_60815_n7004# 5.31617f
+C31 VDD VINN 0.696662f
+C32 a_61329_n6784# VINN 1.79834f
+C33 VDD OUT 11.5628f
+C34 VINP a_66329_n6784# 1.79263f
+C35 a_79287_n10784# a_55035_n6784# 0.516117f
+C36 VINP IB 0.822556f
+C37 a_66329_n6784# a_55035_n6784# 2.96396f
+C38 a_61329_n6784# VSS 1.41947f
+C39 VINN w_60815_n7004# 0.387961f
+C40 a_55035_n6784# IB 0.107321f
+C41 IB w_75815_n7004# 0.387961f
+C42 VINN dw_60815_n7004# 3.35781f
+C43 IB w_54815_n7004# 0.044345f
+C44 OUT a_53801_n12052# 75.607704f
+C45 VINP a_53801_n12052# 55.645f
+C46 VINN a_53801_n12052# 52.881397f
+C47 IB a_53801_n12052# 94.8949f
+C48 VSS a_53801_n12052# 0.267302p
+C49 VDD a_53801_n12052# 0.121507p
+C50 a_79287_n10784# a_53801_n12052# 3.82529f
+C51 a_55043_n10784# a_53801_n12052# 1.97668f
+C52 a_66329_n6784# a_53801_n12052# 10.850401f
+C53 a_61329_n6784# a_53801_n12052# 4.03007f
+C54 a_55035_n6784# a_53801_n12052# 10.8673f
+C55 dw_60815_n7004# a_53801_n12052# 32.307f
+.ends
+

@@ -1,0 +1,90 @@
+
+Circuit 1 cell pfet_06v0 and Circuit 2 cell pfet_06v0 are black boxes.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_06v0                       |Circuit 2: pfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_06v0 and pfet_06v0 are equivalent.
+
+Circuit 1 cell nfet_06v0 and Circuit 2 cell nfet_06v0 are black boxes.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_06v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_06v0                       |Circuit 2: nfet_06v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_06v0 and nfet_06v0 are equivalent.
+
+Class TOP (1):  Merged 1 parallel devices.
+Class TOP (3):  Merged 60 parallel devices.
+Subcircuit summary:
+Circuit 1: TOP                             |Circuit 2: TOP                             
+-------------------------------------------|-------------------------------------------
+pfet_06v0 (7->6)                           |pfet_06v0 (44->6)                          
+nfet_06v0 (6)                              |nfet_06v0 (28->6)                          
+c (1)                                      |(no matching element)                      
+(no matching element)                      |cap_mim_2f0_m4m5_noshield (1)              
+Number of devices: 13                      |Number of devices: 13                      
+Number of nets: 12 **Mismatch**            |Number of nets: 13 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: TOP                             |Circuit 2: TOP                             
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  nfet_06v0/(1|3) = 4                      |  nfet_06v0/(1|3) = 3                      
+  nfet_06v0/4 = 6                          |  nfet_06v0/4 = 5                          
+                                           |                                           
+Net: net4                                  |Net: a_79287_n10784                        
+  c/top = 1                                |  nfet_06v0/(1|3) = 1                      
+  nfet_06v0/(1|3) = 1                      |  cap_mim_2f0_m4m5_noshield/2 = 1          
+                                           |                                           
+(no matching net)                          |Net: w_62417_n11436                        
+                                           |  nfet_06v0/(1|3) = 1                      
+                                           |  nfet_06v0/4 = 1                          
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: OUT                                   |Net: OUT                                   
+  pfet_06v0/(1|3) = 1                      |  pfet_06v0/(1|3) = 1                      
+  nfet_06v0/(1|3) = 1                      |  nfet_06v0/(1|3) = 1                      
+  c/bottom = 1                             |  cap_mim_2f0_m4m5_noshield/1 = 1          
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: TOP                             |Circuit 2: TOP                             
+
+---------------------------------------------------------------------------------------
+Instance: c:1                              |Instance: cap_mim_2f0_m4m5_noshield:46     
+  top = 2                                  |  1 = 3                                    
+  bottom = 3                               |  2 = 2                                    
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: TOP                             |Circuit 2: TOP                             
+-------------------------------------------|-------------------------------------------
+VSS                                        |VSS                                        
+VDD                                        |VDD                                        
+vinp                                       |VINP                                       
+VINN                                       |VINN                                       
+IB                                         |IB                                         
+OUT                                        |OUT                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes TOP and TOP are equivalent.
+
+Final result: Netlists do not match.

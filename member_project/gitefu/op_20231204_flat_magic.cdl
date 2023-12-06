@@ -1,0 +1,19 @@
+** sch_path: /home/tomoakitanaka/Documents/MyDocuments/ISHIKAI/2023/gf180/op1124/klayout/first/TOP.sch
+.subckt TOP OUT VDD IB VINN vinp VSS
+*.PININFO OUT:O VDD:B IB:I VINN:I vinp:I VSS:B
+XM1 OUT IB VDD VDD pfet_06v0 L=0.70u W=7u nf=10 m=1
+XM2 OUT net3 VSS VSS nfet_06v0 L=0.70u W=7u nf=10 m=1
+XM3 OUT IB VDD VDD pfet_06v0 L=0.70u W=7u nf=10 m=1
+XM6 net1 VINN net2 net1 pfet_06v0 L=0.7u W=7u nf=10 m=1
+XM4 net1 vinp net3 net1 pfet_06v0 L=0.70u W=7u nf=10 m=1
+XM5 net1 IB VDD VDD pfet_06v0 L=0.7u W=7u nf=2 m=1
+XM7 net3 net2 VSS VSS nfet_06v0 L=0.7u W=3.5u nf=1 m=1
+XM8 net2 net2 VSS VSS nfet_06v0 L=0.7u W=3.5u nf=1 m=1
+C1 net4 OUT 1.5p m=1
+XM9 net4 net5 net3 VSS nfet_06v0 L=0.70u W=3.5u nf=4 m=1
+XM11 net5 net5 net6 VSS nfet_06v0 L=0.7u W=3.5u nf=1 m=1
+XM12 net6 net6 VSS VSS nfet_06v0 L=0.7u W=3.5u nf=1 m=1
+XM10 net5 IB VDD VDD pfet_06v0 L=0.7u W=7u nf=1 m=1
+XM13 IB IB VDD VDD pfet_06v0 L=0.7u W=7u nf=1 m=1
+.ends
+.end
