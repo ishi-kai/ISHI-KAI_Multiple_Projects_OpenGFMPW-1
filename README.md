@@ -87,18 +87,16 @@ This attempt tells me a important understanding of principles of semiconductor d
 - ![homelith_inverter_layout](images/homelith_inverter_layout.jpg)
 
 ## [ice458](member_project/ice458/)
-I designed my first semiconductor and built an ADC circuit.  
+I designed a dynamic comparator.
 
 ### [xschem](member_project/ice458/dynamic_comparator/xschem/)
-Included here are the circuit data for the dynamic comparator and 4-bit SAR ADC.  
-There does not seem to be a SPICE model of pfet for 5V, so a 6V model must be substituted when performing simulations.  
-Except for cmp_only_5v_tb.sch, all other transistors use 3.3V transistors. The simulation works, but I abandoned the design because it seems that GFMPW-1 cannot use 3.3V transistors.  
-Use cmp_only_5v_no_label.gds with the labels removed, as the labels will not pass the pre-check tool for some reason.    
+At first I was designing a 4-bit asynchronous SAR ADC, but in the middle of the project, I realized that I could not use 3.3V transistors and that I did not have time for layout, so I decided to make only a comparator.
 
 - ![ice458_adc_xschem](images/ice458_adc_xschem.jpg)
 
 ### [klayout](member_project/ice458/dynamic_comparator/klayout/)
-Use cmp_only_5v_no_label.gds with the labels removed, as the labels will not pass the pre-check tool for some reason.  
+This is the layout of the comparator.
+
 - ![ice458_adc_layout](images/ice458_adc_layout.jpg)
 
 
