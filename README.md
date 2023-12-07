@@ -77,8 +77,10 @@ X : [@tnk_make](https://twitter.com/tnk_make)
 
 
 ## [homelith](member_project/homelith/)
-This is the first time I designed my first semiconductor, building a simple inverter circuit.
-Although my PMOS design is relatively smaller than expected by counterpart NMOS, I dare submit on current composition.
+This is the first time I designed my semiconductor, building a simple inverter circuit.
+
+Although my PMOS design is relatively smaller than expected by counterpart NMOS, I dare submit on current composition for measure real performance of un-balanced design.
+
 This attempt tells me a important understanding of principles of semiconductor design and I would like to express my gratitude to this project.
 
 - ![homelith_inverter_xschem](images/homelith_inverter_xschem.jpg)
