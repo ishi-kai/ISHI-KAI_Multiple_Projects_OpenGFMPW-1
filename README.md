@@ -27,7 +27,9 @@ Therefore, we plan to prepare a pad on silicon and run analog circuits by probin
 
 # Members' Designs (10 Designs)
 ## [3zki](member_project/3zki/)
-I am a master's student in the semiconductor department.  
+I designed a rail-to-rail opamp.
+
+I am assuming Vdd=5.0V and Vb=2.5V.
 
 - ![3zki_opamp_xschem](images/3zki_opamp_xschem.jpg)
 - ![3zki_opamp_layout](images/3zki_opamp_layout.jpg)
