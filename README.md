@@ -62,7 +62,9 @@ I designed my first semiconductor and built an opamp circuit.
 
 
 ## [homelith](member_project/homelith/)
-I designed my first semiconductor and built an inverter circuit.  
+This is the first time I designed my first semiconductor, building a simple inverter circuit.
+Although my PMOS design is relatively smaller than expected by counterpart NMOS, I dare submit on current composition.
+This attempt tells me a important understanding of principles of semiconductor design and I would like to express my gratitude to this project.
 
 - ![homelith_inverter_xschem](images/homelith_inverter_xschem.jpg)
 - ![homelith_inverter_layout](images/homelith_inverter_layout.jpg)
