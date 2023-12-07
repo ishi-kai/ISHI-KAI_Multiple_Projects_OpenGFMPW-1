@@ -134,7 +134,9 @@ In this shuttle I designed a simple inverter. This work has helped me to underst
 
 
 ## [yamada3](member_project/yamada3/)
-I designed my third semiconductor and built an opamp circuit.  
+I was able to build an operational amplifier for the first time!
+Thanks to the "mokumoku-kai" of ISHI-KAI, which was held every day until midnight, I was able to do it with everyone's help. Thank you very much.
+I am glad that I did not give up and worked on it.
 
 - ![yamada3_opamp_xschem](images/yamada3_opamp_xschem.jpg)
 - ![yamada3_opamp_layout](images/yamada3_opamp_layout.jpg)
