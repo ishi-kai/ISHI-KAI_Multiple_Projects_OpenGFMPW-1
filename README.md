@@ -126,7 +126,8 @@ Here is the layout for the opamp.
 
 
 ## [ponzu840w](member_project/ponzu840w/)
-I designed my first semiconductor and built an inverter circuit.  
+I am an electronics undergraduate student working on analog circuit design.  
+In this shuttle I designed a simple inverter. This work has helped me to understand the IC design flow with open source CAD tools.  
 
 - ![ponzu840w_inverter_xschem](images/ponzu840w_inverter_xschem.jpg)
 - ![ponzu840w_inverter_layout](images/ponzu840w_inverter_layout.jpg)
