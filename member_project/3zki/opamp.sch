@@ -539,7 +539,7 @@ lab=vss}
 N 180 -140 180 -80 {
 lab=vss}
 N 80 -170 140 -170 {
-lab=vinb}
+lab=vb}
 N 20 -170 40 -170 {
 lab=vss}
 N 20 -170 20 -140 {
@@ -553,9 +553,9 @@ lab=vss}
 N 180 -140 200 -140 {
 lab=vss}
 N 80 -230 140 -230 {
-lab=vinb}
+lab=vb}
 N 110 -230 110 -170 {
-lab=vinb}
+lab=vb}
 N 20 -230 40 -230 {
 lab=vss}
 N 20 -230 20 -170 {
@@ -565,14 +565,14 @@ lab=vss}
 N 200 -230 200 -170 {
 lab=vss}
 N 110 -250 110 -230 {
-lab=vinb}
+lab=vb}
 C {devices/opin.sym} 2220 -340 0 0 {name=p1 lab=out}
 C {devices/title.sym} 160 -30 0 0 {name=l3 author="Mizuki Mori"}
 C {devices/iopin.sym} 2240 -600 0 0 {name=p3 lab=vdd}
 C {devices/iopin.sym} 2240 -80 0 0 {name=p4 lab=vss}
 C {devices/ipin.sym} 710 -290 0 0 {name=p2 lab=vinp}
 C {devices/ipin.sym} 1380 -390 0 1 {name=p5 lab=vinn}
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 380 -550 0 1 {name=M4
+C {symbols/pfet_06v0.sym} 380 -550 0 1 {name=M4
 L=1.0u
 W=10.0u
 nf=1
@@ -586,7 +586,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 380 -470 0 1 {name=M5
+C {symbols/pfet_06v0.sym} 380 -470 0 1 {name=M5
 L=1.0u
 W=10.0u
 nf=1
@@ -600,7 +600,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 380 -210 0 1 {name=M6
+C {symbols/nfet_06v0.sym} 380 -210 0 1 {name=M6
 L=1.0u
 W=1.0u
 nf=1
@@ -614,7 +614,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 540 -550 0 1 {name=M7
+C {symbols/pfet_06v0.sym} 540 -550 0 1 {name=M7
 L=1.0u
 W=10.0u
 nf=1
@@ -628,7 +628,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 540 -470 0 1 {name=M8
+C {symbols/pfet_06v0.sym} 540 -470 0 1 {name=M8
 L=1.0u
 W=10.0u
 nf=1
@@ -642,7 +642,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 540 -210 0 1 {name=M9
+C {symbols/nfet_06v0.sym} 540 -210 0 1 {name=M9
 L=1.0u
 W=5.0u
 nf=1
@@ -656,7 +656,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 540 -130 0 1 {name=M10
+C {symbols/nfet_06v0.sym} 540 -130 0 1 {name=M10
 L=1.0u
 W=5.0u
 nf=1
@@ -670,7 +670,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 730 -550 0 0 {name=M11
+C {symbols/pfet_06v0.sym} 730 -550 0 0 {name=M11
 L=1.0u
 W=10.0u
 nf=1
@@ -684,7 +684,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 730 -450 0 0 {name=M12
+C {symbols/pfet_06v0.sym} 730 -450 0 0 {name=M12
 L=1.0u
 W=10.0u
 nf=1
@@ -698,7 +698,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 970 -550 0 1 {name=M13
+C {symbols/pfet_06v0.sym} 970 -550 0 1 {name=M13
 L=1.0u
 W=10.0u
 nf=1
@@ -712,7 +712,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 970 -450 0 1 {name=M14
+C {symbols/pfet_06v0.sym} 970 -450 0 1 {name=M14
 L=1.0u
 W=10.0u
 nf=1
@@ -726,7 +726,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 730 -390 0 0 {name=M15
+C {symbols/pfet_06v0.sym} 730 -390 0 0 {name=M15
 L=1.0u
 W=20.0u
 nf=1
@@ -740,7 +740,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 970 -390 0 1 {name=M16
+C {symbols/pfet_06v0.sym} 970 -390 0 1 {name=M16
 L=1.0u
 W=20.0u
 nf=1
@@ -754,7 +754,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1120 -230 0 0 {name=M17
+C {symbols/nfet_06v0.sym} 1120 -230 0 0 {name=M17
 L=1.0u
 W=5.0u
 nf=1
@@ -768,7 +768,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1120 -130 0 0 {name=M18
+C {symbols/nfet_06v0.sym} 1120 -130 0 0 {name=M18
 L=1.0u
 W=5.0u
 nf=1
@@ -782,7 +782,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1360 -230 0 1 {name=M19
+C {symbols/nfet_06v0.sym} 1360 -230 0 1 {name=M19
 L=1.0u
 W=5.0u
 nf=1
@@ -796,7 +796,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1360 -130 0 1 {name=M20
+C {symbols/nfet_06v0.sym} 1360 -130 0 1 {name=M20
 L=1.0u
 W=5.0u
 nf=1
@@ -810,7 +810,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1120 -290 0 0 {name=M21
+C {symbols/nfet_06v0.sym} 1120 -290 0 0 {name=M21
 L=1.0u
 W=10.0u
 nf=1
@@ -824,7 +824,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1360 -290 0 1 {name=M22
+C {symbols/nfet_06v0.sym} 1360 -290 0 1 {name=M22
 L=1.0u
 W=10.0u
 nf=1
@@ -838,21 +838,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1510 -450 0 1 {name=M29
-L=1.0u
-W=10.0u
-nf=1
-m=1
-ad="'int((nf+1)/2) * W/nf * 0.18u'"
-pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
-as="'int((nf+2)/2) * W/nf * 0.18u'"
-ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
-nrd="'0.18u / W'" nrs="'0.18u / W'"
-sa=0 sb=0 sd=0
-model=pfet_06v0
-spiceprefix=X
-}
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1710 -450 0 0 {name=M30
+C {symbols/pfet_06v0.sym} 1510 -450 0 1 {name=M29
 L=1.0u
 W=10.0u
 nf=1
@@ -866,7 +852,21 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1510 -550 0 1 {name=M31
+C {symbols/pfet_06v0.sym} 1710 -450 0 0 {name=M30
+L=1.0u
+W=10.0u
+nf=1
+m=1
+ad="'int((nf+1)/2) * W/nf * 0.18u'"
+pd="'2*int((nf+1)/2) * (W/nf + 0.18u)'"
+as="'int((nf+2)/2) * W/nf * 0.18u'"
+ps="'2*int((nf+2)/2) * (W/nf + 0.18u)'"
+nrd="'0.18u / W'" nrs="'0.18u / W'"
+sa=0 sb=0 sd=0
+model=pfet_06v0
+spiceprefix=X
+}
+C {symbols/pfet_06v0.sym} 1510 -550 0 1 {name=M31
 L=1.0u
 W=20.0u
 nf=1
@@ -880,7 +880,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1710 -550 0 0 {name=M35
+C {symbols/pfet_06v0.sym} 1710 -550 0 0 {name=M35
 L=1.0u
 W=20.0u
 nf=1
@@ -894,7 +894,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1510 -380 0 1 {name=M32
+C {symbols/pfet_06v0.sym} 1510 -380 0 1 {name=M32
 L=1.0u
 W=5.0u
 nf=1
@@ -908,7 +908,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1710 -380 0 0 {name=M33
+C {symbols/pfet_06v0.sym} 1710 -380 0 0 {name=M33
 L=1.0u
 W=5.0u
 nf=1
@@ -922,7 +922,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1510 -230 0 1 {name=M23
+C {symbols/nfet_06v0.sym} 1510 -230 0 1 {name=M23
 L=1.0u
 W=5.0u
 nf=1
@@ -936,7 +936,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1710 -230 0 0 {name=M24
+C {symbols/nfet_06v0.sym} 1710 -230 0 0 {name=M24
 L=1.0u
 W=5.0u
 nf=1
@@ -950,7 +950,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1510 -130 0 1 {name=M25
+C {symbols/nfet_06v0.sym} 1510 -130 0 1 {name=M25
 L=1.0u
 W=10.0u
 nf=1
@@ -964,7 +964,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1710 -130 0 0 {name=M26
+C {symbols/nfet_06v0.sym} 1710 -130 0 0 {name=M26
 L=1.0u
 W=10.0u
 nf=1
@@ -978,7 +978,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1570 -300 0 1 {name=M27
+C {symbols/nfet_06v0.sym} 1570 -300 0 1 {name=M27
 L=1.0u
 W=2.5u
 nf=1
@@ -992,7 +992,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1650 -300 0 0 {name=M28
+C {symbols/nfet_06v0.sym} 1650 -300 0 0 {name=M28
 L=1.0u
 W=2.5u
 nf=1
@@ -1006,7 +1006,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1920 -550 0 1 {name=M34
+C {symbols/pfet_06v0.sym} 1920 -550 0 1 {name=M34
 L=1.0u
 W=10.0u
 nf=1
@@ -1020,7 +1020,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1920 -450 0 1 {name=M36
+C {symbols/pfet_06v0.sym} 1920 -450 0 1 {name=M36
 L=1.0u
 W=10.0u
 nf=1
@@ -1034,7 +1034,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 1920 -380 0 1 {name=M37
+C {symbols/pfet_06v0.sym} 1920 -380 0 1 {name=M37
 L=1.0u
 W=10.0u
 nf=1
@@ -1048,7 +1048,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1920 -230 0 1 {name=M38
+C {symbols/nfet_06v0.sym} 1920 -230 0 1 {name=M38
 L=1.0u
 W=5.0u
 nf=1
@@ -1062,7 +1062,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 1920 -130 0 1 {name=M39
+C {symbols/nfet_06v0.sym} 1920 -130 0 1 {name=M39
 L=1.0u
 W=5.0u
 nf=1
@@ -1076,7 +1076,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 2070 -550 0 1 {name=M45
+C {symbols/pfet_06v0.sym} 2070 -550 0 1 {name=M45
 L=1.0u
 W=10.0u
 nf=1
@@ -1090,7 +1090,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 2070 -450 0 1 {name=M46
+C {symbols/pfet_06v0.sym} 2070 -450 0 1 {name=M46
 L=1.0u
 W=10.0u
 nf=1
@@ -1104,7 +1104,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 2070 -300 0 1 {name=M40
+C {symbols/nfet_06v0.sym} 2070 -300 0 1 {name=M40
 L=1.0u
 W=5.0u
 nf=1
@@ -1118,7 +1118,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 2070 -230 0 1 {name=M41
+C {symbols/nfet_06v0.sym} 2070 -230 0 1 {name=M41
 L=1.0u
 W=5.0u
 nf=1
@@ -1132,7 +1132,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 2070 -130 0 1 {name=M42
+C {symbols/nfet_06v0.sym} 2070 -130 0 1 {name=M42
 L=1.0u
 W=5.0u
 nf=1
@@ -1146,7 +1146,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 2200 -420 0 0 {name=M43
+C {symbols/pfet_06v0.sym} 2200 -420 0 0 {name=M43
 L=1.0u
 W=100.0u
 nf=1
@@ -1160,7 +1160,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 2200 -260 0 0 {name=M44
+C {symbols/nfet_06v0.sym} 2200 -260 0 0 {name=M44
 L=1.0u
 W=50.0u
 nf=1
@@ -1174,17 +1174,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/cap_mim_2p0fF_lvs.sym} 2130 -390 0 0 {name=C1
-C=1.024p
-W=64e-6
-L=8e-6
-model=cap_mim_2f0fF}
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/cap_mim_2p0fF_lvs.sym} 2130 -290 0 0 {name=C2
-C=1.024p
-W=64e-6
-L=8e-6
-model=cap_mim_2f0fF}
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 60 -470 0 1 {name=M1
+C {symbols/pfet_06v0.sym} 60 -470 0 1 {name=M1
 L=1.0u
 W=2.0u
 nf=1
@@ -1198,7 +1188,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 200 -550 0 1 {name=M2
+C {symbols/pfet_06v0.sym} 200 -550 0 1 {name=M2
 L=1.0u
 W=10.0u
 nf=1
@@ -1212,7 +1202,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/pfet_06v0.sym} 200 -470 0 1 {name=M3
+C {symbols/pfet_06v0.sym} 200 -470 0 1 {name=M3
 L=1.0u
 W=10.0u
 nf=1
@@ -1226,7 +1216,7 @@ sa=0 sb=0 sd=0
 model=pfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 160 -170 0 0 {name=M47
+C {symbols/nfet_06v0.sym} 160 -170 0 0 {name=M47
 L=1.0u
 W=1.0u
 nf=1
@@ -1240,7 +1230,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 60 -170 0 1 {name=M48
+C {symbols/nfet_06v0.sym} 60 -170 0 1 {name=M48
 L=1.0u
 W=1.0u
 nf=1
@@ -1254,7 +1244,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 60 -230 0 1 {name=M49
+C {symbols/nfet_06v0.sym} 60 -230 0 1 {name=M49
 L=1.0u
 W=1.0u
 nf=1
@@ -1268,7 +1258,7 @@ sa=0 sb=0 sd=0
 model=nfet_06v0
 spiceprefix=X
 }
-C {pdk/gf180mcuD/libs.tech/xschem/symbols/nfet_06v0.sym} 160 -230 0 0 {name=M50
+C {symbols/nfet_06v0.sym} 160 -230 0 0 {name=M50
 L=1.0u
 W=1.0u
 nf=1
@@ -1283,3 +1273,15 @@ model=nfet_06v0
 spiceprefix=X
 }
 C {devices/ipin.sym} 110 -250 0 0 {name=p6 lab=vb}
+C {symbols/cap_mim_2p0fF.sym} 2130 -390 0 0 {name=C1
+W=64e-6
+L=8e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
+C {symbols/cap_mim_2p0fF.sym} 2130 -290 0 0 {name=C2
+W=64e-6
+L=8e-6
+model=cap_mim_2f0fF
+spiceprefix=X
+m=1}
