@@ -4,7 +4,7 @@ This time, we brought together eight novice semiconductor designers (most of who
 It will then be a group application that combines them into one layout.  
 
 - ![all_members_layout](images/all_members_layout.jpg)
-
+- ![all_members_layout_using](images/all_members_layout_using.jpg)
 
 ## How do you run an analog circuit on the OpenMPW GF-1?
 Since ISHI-KAI has university professors and semiconductor companies as collaborators, we are able to borrow probers through the generosity of professors and companies.  
