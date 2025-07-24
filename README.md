@@ -32,7 +32,9 @@ I designed a rail-to-rail opamp.
 I am assuming Vdd=5.0V and Vb=2.5V.
 
 (Note July 24, 2025)
+
 This design has taken from "CMOS Circuit Design, Layout, and Simulation" (Figure 24.48) by R. Jacob Baker.
+
 Also, look into "Low Voltage Cascode Current Mirror"
 
 - ![3zki_opamp_xschem](images/3zki_opamp_xschem.jpg)
