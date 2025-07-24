@@ -34,6 +34,11 @@ I am assuming Vdd=5.0V and Vb=2.5V.
 - ![3zki_opamp_xschem](images/3zki_opamp_xschem.jpg)
 - ![3zki_opamp_layout](images/3zki_opamp_layout.jpg)
 
+### Reference
+We applied for GFMPW-1 (free shuttle), but was not accepted, so no documents or measurements were created.  
+3zki's design has taken from "CMOS Circuit Design, Layout, and Simulation" (Figure 24.48) by R. Jacob Baker. It doesn't match perfectly, but it should be sufficient as a source.  
+
+
 ## [ajisai](member_project/ajisai/)
 I designed my first semiconductor and built an inverter circuit.  
 
